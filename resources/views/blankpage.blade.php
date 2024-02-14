@@ -10,5 +10,5 @@
 @stop
 
 @section('contenido')
-    kjsdbfjks
+    Hola mundo en laravel
 @stop
