@@ -6,7 +6,7 @@
 
 @section('breadcrum')
     <li class="breadcrumb-item"><a href="{{ url('/home') }}">Inicio</a></li>
-    <li class="breadcrumb-item active">Blank page</li>
+    <li class="breadcrumb-item active">Consultar Oficio</li>
 @stop
 
 @section('contenido')

@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Oficio extends Model
 {
     use HasFactory;
+    protected $fillable=['folio','lugar','fecha','cuerpo','asunto','foto_firma','oficio_pdf'];
 }
