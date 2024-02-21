@@ -52,6 +52,9 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
     Route::get('RegistrarOficios', [OficioController::class, 'RegistrarOficios']);
     
     Route::post('GuardarOficio', [OficioController::class, 'GuardarOficio']);
+
+    Route::post('ConsultarOficio', [OficioController::class, 'ConsultarOficio']);
+    
     
 });
 

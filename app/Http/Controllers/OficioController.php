@@ -20,7 +20,7 @@ class OficioController extends Controller
             'asunto'=>$datos->input('asunto'),
             'foto_firma'=>'foto.png', 
             'oficio_pdf'=>'oficio.pdf' 
-
+            
         ]);
 
         
