@@ -1,12 +1,12 @@
 @extends('app')
 
 @section('titulo')
-    <h1>Consultar Alumnos</h1>
+    <h1>Consultar Oficios </h1>
 @stop
 
 @section('breadcrum')
     <li class="breadcrumb-item"><a href="{{ url('/home') }}">Inicio</a></li>
-    <li class="breadcrumb-item active">Consultar Alumnos</li>
+    <li class="breadcrumb-item active">Consultar Oficios</li>
 @stop
 
 @section('contenido')
@@ -15,34 +15,26 @@
             <thead>
                 <tr>
                     <th>Folio</th>
-                    <th>Nombre</th>
-                    <th>Asunto</th>
+                    <th>Lugar</th>
                     <th>Fecha</th>
-                    <th>Opciones</th>
+                    <th>Cuerpo</th>
+                    <th>Asunto</th>
+                    <th>Ver Pdf</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($alumnos as $a)
-                <tr>
-                    <td>{{ $a->id }}</td>
-                    <td>{{ $a->nombre }}</td>
-                    <td>{{ $a->edad }}</td>
-                    <td>
-                        @if ($a->sexo == 0)
-                            Femenino
-                        @else
-                            Masculino
-                        @endif
-                    </td>
-                    <td>
-                        <a href="" class="btn btn-danger btn-sm">
-                            <i class="fas fa-times"></i>
-                        </a>
-                        <a href="{{ url('reporte/pdf') }}/{{ $a->id }}" class="btn btn-success btn-sm">
-                            <i class="far fa-file-pdf"></i>
-                        </a>
-                    </td>
-                </tr>
+                @foreach ($oficios as $o)
+                    <tr>
+                        <td>{{ $o->folio }}</td>
+                        <td>{{ $o->lugar }}</td>
+                        <td>{{ $o->fecha }}</td>
+                        <td>{{ $o->cuerpo }}</td>
+                        <td>{{ $o->asunto }}</td>
+                        <td> <a href="{{ asset('pdf') }}/{{ $o->id.'.pdf' }}"> PDF </a> </td>
+
+                    </tr>
+
+
                 @endforeach
             </tbody>
         </table>

@@ -187,11 +187,11 @@
                     </p>
                   </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-users""></i>
                     <p>
-                       Alumnos
+                       Mensajes
                       <i class="fas fa-angle-left right"></i>
                     </p>
                   </a>
@@ -209,7 +209,7 @@
                       </a>
                     </li>
                   </ul>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="nav-icon fas fa-tools""></i>
@@ -220,13 +220,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="{{asset('RegistrarOficios')}}" class="nav-link">
+                        <a href="{{url('RegistrarOficios')}}" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
                           <p>Registrar</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="{{asset('')}}" class="nav-link">
+                        <a href="{{url('ConsultarOficio')}}" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
                           <p>Consultar</p>
                         </a>

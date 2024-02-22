@@ -7,7 +7,7 @@
 
 @section('breadcrum')
     <li class="breadcrumb-item"><a href="{{ url('/home') }}">Inicio</a></li>
-    <li class="breadcrumb-item active">Blank page</li>
+    <li class="breadcrumb-item active">Registrar Oficios</li>
 @stop
 
 @section('contenido')
@@ -40,6 +40,8 @@
       </div>
             <a href="">
             <button type="submit" class="btn btn-primary btn-lg">Publicar</button>
+           
+
 
             <a href="{{url('/home')}}" class="btn btn-secondary btn-lg">Cancelar</a>
   </form>

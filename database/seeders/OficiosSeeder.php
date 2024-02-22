@@ -19,7 +19,7 @@ class OficiosSeeder extends Seeder
             'folio'=>'220(SD-CET-107) 1559/2023', 
             'lugar'=>'Culiacán, Sinaloa',
             'fecha'=>'2024-02-14',
-            'cuerpo'=>'Eitan pendejo',
+            'cuerpo'=>'Reunion el lunes',
             'asunto'=>'COMISIÓN REUNIÓN DE TUTORES',
             'foto_firma'=>'foto.png', 
             'oficio_pdf'=>'oficio.pdf' 
@@ -30,7 +30,7 @@ class OficiosSeeder extends Seeder
             'folio'=>'CIR-CET-DOC/2024-002', 
             'lugar'=>'Culiacán, Sinaloa',
             'fecha'=>'2024-02-16',
-            'cuerpo'=>'Eitan pendejo x2',
+            'cuerpo'=>'texto',
             'asunto'=>'ENTREGA DE CROQUIS DE AULAS Y TALLERES',
             'foto_firma'=>'foto.png', 
             'oficio_pdf'=>'oficio.pdf' 

@@ -26,4 +26,10 @@ class OficioController extends Controller
         
         return redirect("/home");
     }
+
+        public function ConsultarOficio(){
+            $oficios=Oficio::all();
+
+            return view("ConsultarOficio",compact('oficios'));
+        }
 }
